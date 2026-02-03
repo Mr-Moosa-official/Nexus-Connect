@@ -5,6 +5,8 @@ import SummarySection from '@/components/profile/summary-section';
 import ExperienceSection from '@/components/profile/experience-section';
 import EducationSection from '@/components/profile/education-section';
 import SkillsSection from '@/components/profile/skills-section';
+import ProjectsSection from '@/components/profile/projects-section';
+import TestimonialsSection from '@/components/profile/testimonials-section';
 
 type ProfilePageProps = {
   params: { id: string };
@@ -24,6 +26,8 @@ export default function ProfilePage({ params }: ProfilePageProps) {
     <div className="max-w-4xl mx-auto space-y-6">
       <ProfileHeader user={user} isCurrentUser={isCurrentUser} />
       <SummarySection summary={user.summary} />
+      <TestimonialsSection testimonials={user.testimonials} />
+      <ProjectsSection projects={user.projects} />
       <ExperienceSection experience={user.experience} />
       <EducationSection education={user.education} />
       <SkillsSection skills={user.skills} />

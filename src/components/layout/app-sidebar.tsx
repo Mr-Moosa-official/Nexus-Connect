@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { Home, Users, User as UserIcon } from 'lucide-react';
+import { Home, Users, User as UserIcon, BookOpen, Quote } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -16,6 +16,8 @@ import { Logo } from '@/components/logo';
 const menuItems = [
   { href: '/', label: 'Feed', icon: Home },
   { href: '/connect', label: 'Connect', icon: Users },
+  { href: '/courses', label: 'Courses', icon: BookOpen },
+  { href: '/reviews', label: 'Testimonials', icon: Quote },
   { href: '/profile/1', label: 'My Profile', icon: UserIcon },
 ];
 

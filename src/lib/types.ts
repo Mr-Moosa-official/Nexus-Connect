@@ -11,6 +11,8 @@ export type User = {
   experience: Experience[];
   education: Education[];
   connections: string[];
+  projects: Project[];
+  testimonials: Testimonial[];
 };
 
 export type Experience = {
@@ -41,4 +43,34 @@ export type Post = {
   createdAt: string;
   likes: number;
   comments: number;
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl?: string;
+  imageHint?: string;
+  url?: string;
+  technologies: string[];
+};
+
+export type Testimonial = {
+  id: string;
+  authorId: string;
+  content: string;
+  createdAt: string;
+};
+
+export type Course = {
+  id: string;
+  title: string;
+  instructor: string;
+  description: string;
+  imageUrl: string;
+  imageHint: string;
+  duration: string;
+  level: 'Beginner' | 'Intermediate' | 'Advanced';
+  rating: number;
+  reviewCount: number;
 };

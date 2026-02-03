@@ -47,6 +47,42 @@
       "description": "Image for a post about business growth",
       "imageUrl": "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXNpbmVzcyUyMGNoYXJ0fGVufDB8fHx8MTc3MDExNjA0NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "business chart"
+    },
+    {
+      "id": "proj-1",
+      "description": "Image for a cloud technology project",
+      "imageUrl": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbG91ZCUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzcyMjIzMTgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cloud technology"
+    },
+    {
+      "id": "proj-2",
+      "description": "Image for a mobile app project",
+      "imageUrl": "https://images.unsplash.com/photo-1601933973780-153611f74c69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2JpbGUlMjBhcHB8ZW58MHx8fHwxNzcyMjIzMjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile app"
+    },
+    {
+      "id": "course-1",
+      "description": "Image for an abstract code course",
+      "imageUrl": "https://images.unsplash.com/photo-1550063873-ab792590f865?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzcyMjIzMjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "course-2",
+      "description": "Image for a course about team meeting",
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtZWV0aW5nJTIwdGVhbXxlbnwwfHx8fDE3NzIyMjMyNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "meeting team"
+    },
+    {
+      "id": "course-3",
+      "description": "Image for a course about design tools",
+      "imageUrl": "https://images.unsplash.com/photo-1587440871875-191322ee64b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkZXNpZ24lMjB0b29sc3xlbnwwfHx8fDE3NzIyMjMyOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "design tools"
+    },
+    {
+      "id": "course-4",
+      "description": "Image for a data analytics course",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc3MjIyMzMxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analytics"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import type { User, Post, Experience, Education } from './types';
+import type { User, Post, Experience, Education, Project, Testimonial, Course } from './types';
 
 export const users: User[] = [
   {
@@ -43,6 +43,25 @@ export const users: User[] = [
       },
     ],
     connections: ['2', '3'],
+    projects: [
+      {
+        id: 'proj1',
+        title: 'Cloud Platform',
+        description: 'A scalable cloud service platform for enterprise customers, featuring a microservices architecture.',
+        imageUrl: 'https://picsum.photos/seed/proj1/600/400',
+        imageHint: 'cloud technology',
+        url: '#',
+        technologies: ['Next.js', 'GraphQL', 'Kubernetes']
+      }
+    ],
+    testimonials: [
+        {
+            id: 'test1',
+            authorId: '2',
+            content: "Jane is an exceptional engineer. Her ability to tackle complex problems with elegant solutions is remarkable. She was a key player in our most successful projects.",
+            createdAt: '2 weeks ago'
+        }
+    ]
   },
   {
     id: '2',
@@ -77,6 +96,15 @@ export const users: User[] = [
       },
     ],
     connections: ['1', '4'],
+    projects: [],
+    testimonials: [
+         {
+            id: 'test2',
+            authorId: '1',
+            content: "John has a keen eye for product and an incredible ability to lead teams. He fosters a collaborative environment that brings out the best in everyone.",
+            createdAt: '1 month ago'
+        }
+    ],
   },
   {
     id: '3',
@@ -111,6 +139,17 @@ export const users: User[] = [
       },
     ],
     connections: ['1'],
+    projects: [
+        {
+            id: 'proj2',
+            title: 'Mobile Banking App',
+            description: 'A user-friendly mobile banking application with a focus on accessibility and intuitive navigation.',
+            imageUrl: 'https://picsum.photos/seed/proj2/600/400',
+            imageHint: 'mobile app',
+            technologies: ['Figma', 'User Testing']
+        }
+    ],
+    testimonials: [],
   },
   {
     id: '4',
@@ -125,6 +164,8 @@ export const users: User[] = [
     experience: [],
     education: [],
     connections: ['2'],
+    projects: [],
+    testimonials: [],
   },
    {
     id: '5',
@@ -139,6 +180,8 @@ export const users: User[] = [
     experience: [],
     education: [],
     connections: [],
+    projects: [],
+    testimonials: [],
   },
   {
     id: '6',
@@ -153,6 +196,8 @@ export const users: User[] = [
     experience: [],
     education: [],
     connections: [],
+    projects: [],
+    testimonials: [],
   }
 ];
 
@@ -190,8 +235,69 @@ export const posts: Post[] = [
   },
 ];
 
+export const courses: Course[] = [
+    {
+        id: 'course1',
+        title: 'Advanced React and Next.js',
+        instructor: 'Jane Doe',
+        description: 'Take your React skills to the next level with advanced patterns, performance optimizations, and server-side rendering with Next.js.',
+        imageUrl: 'https://picsum.photos/seed/course1/600/400',
+        imageHint: 'code abstract',
+        duration: '8 weeks',
+        level: 'Advanced',
+        rating: 4.9,
+        reviewCount: 1250,
+    },
+    {
+        id: 'course2',
+        title: 'Product Management Fundamentals',
+        instructor: 'John Smith',
+        description: 'Learn the essential skills to become a successful product manager, from user research to roadmap planning and execution.',
+        imageUrl: 'https://picsum.photos/seed/course2/600/400',
+        imageHint: 'team meeting',
+        duration: '6 weeks',
+        level: 'Beginner',
+        rating: 4.8,
+        reviewCount: 2300,
+    },
+    {
+        id: 'course3',
+        title: 'Mastering UX/UI Design with Figma',
+        instructor: 'Sarah Lee',
+        description: 'A comprehensive guide to designing beautiful and intuitive user interfaces with Figma, from basic principles to advanced prototyping.',
+        imageUrl: 'https://picsum.photos/seed/course3/600/400',
+        imageHint: 'design tools',
+        duration: '10 weeks',
+        level: 'Intermediate',
+        rating: 4.9,
+        reviewCount: 1800,
+    },
+    {
+        id: 'course4',
+        title: 'Introduction to Data Science with Python',
+        instructor: 'Michael Brown',
+        description: 'Get started with data science. Learn to analyze data, create beautiful visualizations, and build predictive models using Python.',
+        imageUrl: 'https://picsum.photos/seed/course4/600/400',
+        imageHint: 'data analytics',
+        duration: '12 weeks',
+        level: 'Beginner',
+        rating: 4.7,
+        reviewCount: 3200,
+    }
+]
+
 // Helper functions to get data
 export const getUsers = () => users;
 export const getUserById = (id: string) => users.find((user) => user.id === id);
 export const getPosts = () => posts;
 export const getPostById = (id: string) => posts.find((post) => post.id === id);
+export const getCourses = () => courses;
+export const getAllTestimonials = () => {
+    const allTestimonials: {testimonial: Testimonial, recipient: User}[] = [];
+    users.forEach(user => {
+        user.testimonials.forEach(testimonial => {
+            allTestimonials.push({testimonial, recipient: user});
+        })
+    });
+    return allTestimonials;
+}
