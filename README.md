@@ -1,6 +1,6 @@
 # 🔗 Nexus Connect – Professional Networking Platform
 
-Nexus Connect is a modern professional networking platform designed to help individuals build meaningful connections, showcase their profiles, and discover relevant opportunities through AI-powered recommendations.
+Nexus  Connect is a modern professional networking platform designed to help individuals build meaningful connections, showcase their profiles, and discover relevant opportunities through AI-powered recommendations.
 
 The platform focuses on clarity, professionalism, and intelligent networking—without unnecessary clutter.
 
