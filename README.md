@@ -10,7 +10,7 @@ Nexus Connect enables users to:
 
 Build and manage professional profiles
 
-Discover and connect with professionals across industries
+Discover and connect with professionals  across industries
 
 Share insights and updates through a simple feed
 
